@@ -15,7 +15,7 @@ The end effector features four bar linkages and a geartrain (1:2 gear ratio) dri
 
 The Ansys below shows the loading of the claws when picking up 5kg parallel to the ground.
 
-![EE End Plate Analysis]({{ "/assets/images/EE-ansys-5kg-load-stress" | relative_url }}){: .inline-image-l}
+![EE End Plate Analysis]({{ "/assets/images/EE-ansys-5kg-load-stress.png" | relative_url }}){: .inline-image-l}
 
 This is how I solved the problem:
 
