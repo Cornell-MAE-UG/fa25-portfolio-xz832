@@ -13,7 +13,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Zhou Xianyi
 description              : Zhou Xianyi - Projects and CV 
-baseurl                  : "/fa25-portfolio-xz832" # Set this to your repo name 
+baseurl                  : "fa25-portfolio-xz832" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
