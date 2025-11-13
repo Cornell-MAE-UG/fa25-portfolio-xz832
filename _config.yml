@@ -8,12 +8,12 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : Your Name
+title                    : Zhou Xianyi
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : Your Name
-description              : Your Name - Projects and CV 
-baseurl                  : "" # Set this to your repo name 
+name                     : Zhou Xianyi
+description              : Zhou Xianyi - Projects and CV 
+baseurl                  : "/fa25-portfolio-xz832" # Set this to your repo name 
 
 # Theme and Style
 theme: jekyll-theme-minimal
