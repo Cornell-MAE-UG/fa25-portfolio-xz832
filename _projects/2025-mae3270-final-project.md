@@ -102,8 +102,11 @@ Strain at gauge from FEM = 886 microstrain, equivalent to 137.28 mV/V at 600 in-
 We are using a semiconductor bar-shaped strain gauge from Haptica, model SS-027-013-500 P. We chose this strain gauge due to its incredible high sensitivity, since we do not have a strict budget constraint. We are using a full-bridge strain gauge configuration, which we can comfortably fit onto our torque wrench design given the following dimensions:
 
 Total Length mm (inch): 0.686 (0.027)
+
 Active Length mm (inch): 0.330 (0.013)
+
 Width mm (inch): 0.229 (0.009)
+
 Thickness mm (inch): 0.010 (0.0004)
 
 Gauge Factor: 155±10
