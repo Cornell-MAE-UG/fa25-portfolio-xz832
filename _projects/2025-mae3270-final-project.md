@@ -67,14 +67,19 @@ fprintf('strain at gauge = %.0f microstrain\n', FEM_strain);
 fprintf('output = %.2f mV/V at %d in-lbf using full bridge\n', output, M);
 ```
 as well as FEM analysis using Ansys. Our results are presented below.
-![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png/n" | relative_url }})
+![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url }})
+
 L = 15 in
+
 h = 0.55 in
+
 b = 1.3 in
+
 c = 1 in
 
 Images of our CAD model:
 ![CAD of the updated torque wrench design]({{ "/assets/images/designCAD.png" | relative_url }})
+
 Part drawing showing all key dimensions:
 ![Key dimensions]({{ "/assets/images/designPartDrawing.png" | relative_url }})
 
@@ -90,13 +95,19 @@ Contour plot of maximum principal stress from FEM
 ![Ansys stress contour plot]({{ "/assets/images/MaxPrincipalStress.png" | relative_url }})
 
 Maximum normal stress is 53811 psi (at where the drive meets the handle), strain at strain gauge location is 886 microstrain, and deflection of load point is 0.41648in.
+
 Strain at gauge from FEM = 886 microstrain, equivalent to 137.28 mV/V at 600 in-lbf using full bridge
 
 We are using a semiconductor bar-shaped strain gauge from Haptica, model SS-027-013-500 P. We chose this strain gauge due to its incredible high sensitivity, since we do not have a strict budget constraint. We are using a full-bridge strain gauge configuration, which we can comfortably fit onto our torque wrench design given the following dimensions:
 
 Total Length mm (inch): 0.686 (0.027)
+
 Active Length mm (inch): 0.330 (0.013)
+
 Width mm (inch): 0.229 (0.009)
+
 Thickness mm (inch): 0.010 (0.0004)
+
 Gauge Factor: 155±10
+
 Source: [Haptica Sensing Semiconductor Strain Gauges](https://www.hapticasensing.com/products/semiconductor-strain-gauges/bar-gauges/)
