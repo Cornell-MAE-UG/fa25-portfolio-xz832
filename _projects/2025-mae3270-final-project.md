@@ -84,7 +84,7 @@ Images of our CAD model:
 Part drawing showing all key dimensions:
 ![Key dimensions]({{ "/assets/images/designPartDrawing.png" | relative_url | width = 100}})
 
-We used Aluminum 6061-T6. It is a ductile material and an industry standard. It has a Young’s modulus of 9.66 x 10^6^ psi, Poisson’s ratio of 0.33, yield tensile strength of 3.77 x 10^4^ psi, fracture toughness of 30050 psi sqrt(in), and fatigue strength for 10^6^ cycles of 20500 psi.
+We used Aluminum 6061-T6. It is a ductile material and an industry standard. It has a Young’s modulus of 9.66 x 10<sup>6</sup> psi, Poisson’s ratio of 0.33, yield tensile strength of 3.77 x 10<sup>4</sup> psi, fracture toughness of 30050 psi sqrt(in), and fatigue strength for 10<sup>6</sup> cycles of 20500 psi.
 
 How loads and boundary conditions were applied to our FEM model:
 ![Ansys loads and boundary conditions]({{ "/assets/images/Diagram for BC.jpg" | relative_url | width = 100}})
