@@ -67,6 +67,7 @@ fprintf('strain at gauge = %.0f microstrain\n', FEM_strain);
 fprintf('output = %.2f mV/V at %d in-lbf using full bridge\n', output, M);
 ```
 as well as FEM analysis using Ansys. Our results are presented below.
+
 ![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url }})
 
 L = 15 in
