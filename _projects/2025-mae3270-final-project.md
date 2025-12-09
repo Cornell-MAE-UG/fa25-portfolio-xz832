@@ -71,8 +71,11 @@ as well as FEM analysis using Ansys. Our results are presented below.
 ![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url | width = 100}})
 
 L = 15 in
+
 h = 0.55 in
+
 b = 1.3 in
+
 c = 1 in
 
 Images of our CAD model:
