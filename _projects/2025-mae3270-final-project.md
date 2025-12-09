@@ -3,7 +3,7 @@ layout: project
 title: Torque Wrench Analysis and Potential Design
 description: Analysis of the performance of a torque wrench based on given parameters and improvements to satisfy factors of safety and strain gauge sensitivity
 technologies: [Autodesk Inventor, Ansys, MATLAB]
-image: /assets/images/EE-structure-open.png
+image: /assets/images/DesignDef.png
 ---
 
 Our goal for this project is to design a non-ratcheting, 3/8 inch drive instrumented torque wrench rated for 600 in-lbf. Torque will be transduced using strain gauges bonded to the outer surfaces of the wrench at high strain locations. The design of the torque wrench will have to satisfy the following requirements:
@@ -67,17 +67,36 @@ fprintf('strain at gauge = %.0f microstrain\n', FEM_strain);
 fprintf('output = %.2f mV/V at %d in-lbf using full bridge\n', output, M);
 ```
 as well as FEM analysis using Ansys. Our results are presented below.
+![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url }}){: .inline-image-l}
+L = 15 in
+h = 0.55 in
+b = 1.3 in
+c = 1 in
 
-![CAD of the Delivery End Effector]({{ "/assets/images/EE-CAD.png" | relative_url }}){: .inline-image-l}
+Images of our CAD model:
+![CAD of the updated torque wrench design]({{ "/assets/images/designCAD.png" | relative_url }}){: .inline-image-l}
+Part drawing showing all key dimensions:
+![Key dimensions]({{ "/assets/images/designPartDrawing.png" | relative_url }}){: .inline-image-l}
 
-The Ansys below shows the loading of the claws when picking up 5kg parallel to the ground.
+We used Aluminum 6061-T6. It is a ductile material and an industry standard. It has a Young’s modulus of 9.66 x 10^6^ psi, Poisson’s ratio of 0.33, yield tensile strength of 3.77 x 10^4^ psi, fracture toughness of 30050 psi sqrt(in), and fatigue strength for 10^6^ cycles of 20500 psi.
 
-![EE End Plate Analysis]({{ "/assets/images/EE-ansys-5kg-load-stress.png" | relative_url }}){: .inline-image-l}
+How loads and boundary conditions were applied to our FEM model:
+![Ansys loads and boundary conditions]({{ "/assets/images/Diagram for BC.jpg" | relative_url }}){: .inline-image-l}
 
-This is how I solved the problem:
+Normal strain contours (in the strain gauge direction) from FEM
+![Ansys normal strain contours]({{ "/assets/images/NormalStrainAlongZ.png" | relative_url }}){: .inline-image-l}
 
-```python
-    some code = 10;
-    plot();
-```
+Contour plot of maximum principal stress from FEM
+![Ansys stress contour plot]({{ "/assets/images/MaxPrincipalStress.png" | relative_url }}){: .inline-image-l}
 
+Maximum normal stress is 53811 psi (at where the drive meets the handle), strain at strain gauge location is 886 microstrain, and deflection of load point is 0.41648in.
+Strain at gauge from FEM = 886 microstrain, equivalent to 137.28 mV/V at 600 in-lbf using full bridge
+
+We are using a semiconductor bar-shaped strain gauge from Haptica, model SS-027-013-500 P. We chose this strain gauge due to its incredible high sensitivity, since we do not have a strict budget constraint. We are using a full-bridge strain gauge configuration, which we can comfortably fit onto our torque wrench design given the following dimensions:
+
+Total Length mm (inch): 0.686 (0.027)
+Active Length mm (inch): 0.330 (0.013)
+Width mm (inch): 0.229 (0.009)
+Thickness mm (inch): 0.010 (0.0004)
+Gauge Factor: 155±10
+Source: [Haptica Sensing Semiconductor Strain Gauges](https://www.hapticasensing.com/products/semiconductor-strain-gauges/bar-gauges/)
