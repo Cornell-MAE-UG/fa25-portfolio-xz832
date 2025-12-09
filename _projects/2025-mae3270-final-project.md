@@ -103,9 +103,12 @@ We are using a semiconductor bar-shaped strain gauge from Haptica, model SS-027-
 
 Total Length mm (inch): 0.686 (0.027)
 
+
 Active Length mm (inch): 0.330 (0.013)
 
+
 Width mm (inch): 0.229 (0.009)
+
 
 Thickness mm (inch): 0.010 (0.0004)
 
