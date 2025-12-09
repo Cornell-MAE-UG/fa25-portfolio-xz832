@@ -68,7 +68,7 @@ fprintf('output = %.2f mV/V at %d in-lbf using full bridge\n', output, M);
 ```
 as well as FEM analysis using Ansys. Our results are presented below.
 
-![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url }})
+![Dimensions of the torque wrench]({{ "/assets/images/dimensions.png" | relative_url | width = 100}})
 
 L = 15 in
 h = 0.55 in
@@ -76,21 +76,21 @@ b = 1.3 in
 c = 1 in
 
 Images of our CAD model:
-![CAD of the updated torque wrench design]({{ "/assets/images/designCAD.png" | relative_url }})
+![CAD of the updated torque wrench design]({{ "/assets/images/designCAD.png" | relative_url | width = 100}})
 
 Part drawing showing all key dimensions:
-![Key dimensions]({{ "/assets/images/designPartDrawing.png" | relative_url }})
+![Key dimensions]({{ "/assets/images/designPartDrawing.png" | relative_url | width = 100}})
 
 We used Aluminum 6061-T6. It is a ductile material and an industry standard. It has a Young’s modulus of 9.66 x 10^6^ psi, Poisson’s ratio of 0.33, yield tensile strength of 3.77 x 10^4^ psi, fracture toughness of 30050 psi sqrt(in), and fatigue strength for 10^6^ cycles of 20500 psi.
 
 How loads and boundary conditions were applied to our FEM model:
-![Ansys loads and boundary conditions]({{ "/assets/images/Diagram for BC.jpg" | relative_url }})
+![Ansys loads and boundary conditions]({{ "/assets/images/Diagram for BC.jpg" | relative_url | width = 100}})
 
 Normal strain contours (in the strain gauge direction) from FEM
-![Ansys normal strain contours]({{ "/assets/images/NormalStrainAlongZ.png" | relative_url }})
+![Ansys normal strain contours]({{ "/assets/images/NormalStrainAlongZ.png" | relative_url | width = 100}})
 
 Contour plot of maximum principal stress from FEM
-![Ansys stress contour plot]({{ "/assets/images/MaxPrincipalStress.png" | relative_url }})
+![Ansys stress contour plot]({{ "/assets/images/MaxPrincipalStress.png" | relative_url | width = 100}})
 
 Maximum normal stress is 53811 psi (at where the drive meets the handle), strain at strain gauge location is 886 microstrain, and deflection of load point is 0.41648in.
 
