@@ -48,10 +48,10 @@ X_o = su / ss;
 X_s = sfatigue / max_norm_stress;
 %point load
 point_load_deflection = (Force * (L^3)) / (3 * E * I);
-%guage
+%gauge
 sig_at_c = ((Force * (L)) * (h/2)) / I;
 %strain = sig_at_c/E;
-%strainguage = strain * 1e6 ;
+%straingauge = strain * 1e6 ;
 FEM_strain = 8.8566e-4*1e6;
 output = (GF * k * FEM_strain) / 1e3;
 %results
